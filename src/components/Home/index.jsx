@@ -1,22 +1,24 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Icon, Typography } from "@mui/material";
 import homeChart from "../../assets/images/home-chart.png";
+import { useState } from "react";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
+
 export default function Home() {
   const profitsData = [
     {
-      // icon: GppGoodOutlinedIcon,
+      icon: <GppGoodOutlinedIcon />,
       title: "امنیت",
       description: "توضیحات",
     },
     {
-      //   icon: QuestionAnswerOutlinedIcon,
+      icon: <QuestionAnswerOutlinedIcon />,
       title: "ارتباط مستقیم",
       description: "توضیحات",
     },
     {
-      //   icon: TrendingUpOutlinedIcon,
+      icon: <TrendingUpOutlinedIcon />,
       title: "ارز های متعدد",
       description: "توضیحات",
     },
@@ -35,7 +37,7 @@ export default function Home() {
         sssd
       </Grid>
       {/* Nav */}
-      <Grid item>
+      <Grid item xs={12} sx={{ margin: "0 auto" }}>
         <Grid container display={"flex"} justifyContent={"center"}>
           <Grid item>
             <Typography>
@@ -56,18 +58,63 @@ export default function Home() {
           display={"flex"}
           flexDirection={"column"}
           justifyContent={"center"}
-          alignItems={"center"}
-          sx={{ background: "red" }}
         >
           <Grid item xs={12}>
-            <Typography>مزایای صرافی بیشتر بخوانید.</Typography>
+            <Typography textAlign={"center"}>
+              مزایای صرافی بیشتر بخوانید.
+            </Typography>
           </Grid>
-          <Grid item>
-            <Grid container></Grid>
+          <Grid item xs={12} paddingX={5}>
+            <Grid container sx={{ width: "100%" }}>
+              {profitsData.map((item) => {
+                return (
+                  <Grid
+                    xs={3}
+                    item
+                    sx={{
+                      height: "200px",
+                      borderRadius: "1rem",
+                      border: "1px solid #1D5D9B",
+                      background: "#F0F9FF",
+                      boxShadow: "0px 0px 0px 0px #F4D160",
+                      margin: "0 auto",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        height: "65% !important",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        svg: {
+                          fontSize: "55px",
+                        },
+                      }}
+                    >
+                      <Box>{item.icon}</Box>
+                      <Typography>{item.title}</Typography>
+                    </Box>
+                    <Typography
+                      sx={{
+                        justifySelf: "end",
+                      }}
+                      textAlign={"center"}
+                      paddingBottom={2}
+                    >
+                      {item.description}
+                    </Typography>
+                  </Grid>
+                );
+              })}
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
-      <Grid
+      {/* <Grid
         item
         sx={{
           height: "80px",
@@ -79,7 +126,7 @@ export default function Home() {
         }}
       >
         ssss
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }
