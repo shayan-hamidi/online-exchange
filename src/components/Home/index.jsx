@@ -1,9 +1,10 @@
-import { Box, Grid, Icon, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import homeChart from "../../assets/images/home-chart.png";
-import { useState } from "react";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
+import Testimonials from "../Testimonials";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const profitsData = [
@@ -31,10 +32,26 @@ export default function Home() {
         sx={{
           height: "80px",
           background: "#FAF0D7",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 7,
         }}
         xs={12}
       >
-        sssd
+        {[
+          { name: "خانه", route: "/" },
+          { name: "سوالات", route: "/questions" },
+          { name: "مزایا", route: "/benefits" },
+          { name: "درباره ما", route: "/aboutUs" },
+          { name: "تماس با ما", route: "contactUs" },
+        ].map((item) => {
+          return (
+            <Link className="nav-link" to={item.route}>
+              {item.name}
+            </Link>
+          );
+        })}
       </Grid>
       {/* Nav */}
       <Grid item xs={12} sx={{ margin: "0 auto" }}>
@@ -113,6 +130,7 @@ export default function Home() {
             </Grid>
           </Grid>
         </Grid>
+        <Testimonials />
       </Grid>
       {/* <Grid
         item
