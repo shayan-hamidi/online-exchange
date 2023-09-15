@@ -19,7 +19,7 @@ export default function Nav() {
     >
       {[
         { name: "خانه", route: "/" },
-        { name: "سوالات", route: "/questions" },
+        { name: "سوالات متداول", route: "/questions" },
         { name: "مزایا", route: "/benefits" },
         { name: "درباره ما", route: "/aboutUs" },
         { name: "تماس با ما", route: "contactUs" },

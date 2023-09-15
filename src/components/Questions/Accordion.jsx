@@ -16,6 +16,7 @@ export default function StyledAccordion({ accordionList }) {
         }}
         key={accordionList.summary}
         TransitionProps={{ unmountOnExit: true }}
+        expanded={data.expanded}
       >
         <AccordionSummary expandIcon={data.expandIcon || <ExpandMoreIcon />}>
           <Typography sx={{ color: "#1D5D9B", fontWeight: "bold" }}>

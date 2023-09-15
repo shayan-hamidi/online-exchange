@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import StyledAccordion from "./Accordion";
 
 export default function Questions() {
@@ -7,6 +7,7 @@ export default function Questions() {
       summary: "ارزینو چیست؟",
       details:
         "اگر قصد خرید ارزهای دیجیتال مانند بیت کوین را دارید یا می خواهید دارایی های دیجیتال خود را نقد کنید، ارزینو به شما کمک می کند در سریع‌ترین زمان به این هدف برسید. ارزینو، اولین و معتبرترین بازار ایرانی تبادل ارزهای دیجیتال برای کسانی است که به دنبال یک راهکار امن، مطمئن، سریع، راحت و ارزان برای تبدیل دارایی های خود هستند. در این بازار خریداران و فروشندگان بدون هیچ واسطه‌ای با یکدیگر معامله می‌نمایند. از جمله مهم‌ترین دستاوردهای ارزینو، کاهش ریسک حاصل از بلوکه شدن اموال فعالان ایرانی در بازارهای خارجی، شفافیت بیش‌تر قیمت ارزهای دیجیتال در بازار ایران برای خریداران و فروشندگان محترم، تبدیل سریع و آسان ریال به ارزهای دیجیتال و برعکس و کاهش هزینه‌های خرید و فروش به دلیل حذف واسطه‌هاست.",
+      expanded: true,
     },
     {
       summary: "بیت‌کوین چیست؟",
@@ -33,7 +34,10 @@ export default function Questions() {
   return (
     <Grid container mt={5}>
       <Grid item xs={8} margin={"0 auto"}>
-        <StyledAccordion accordionList={questions} />
+        <Box sx={{ background: "white" }} padding={4}>
+          <Typography mb={2}>سوالات متداول</Typography>
+          <StyledAccordion accordionList={questions} />
+        </Box>
       </Grid>
     </Grid>
   );
