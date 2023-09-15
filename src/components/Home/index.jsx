@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <Grid container>
       {/* Nav */}
-      <Grid
+      {/* <Grid
         item
         sx={{
           height: "80px",
@@ -52,7 +52,7 @@ export default function Home() {
             </Link>
           );
         })}
-      </Grid>
+      </Grid> */}
       {/* Nav */}
       <Grid item xs={12} sx={{ margin: "0 auto" }}>
         <Grid container display={"flex"} justifyContent={"center"}>
@@ -86,6 +86,7 @@ export default function Home() {
               {profitsData.map((item) => {
                 return (
                   <Grid
+                    key={item.title}
                     xs={3}
                     item
                     sx={{
