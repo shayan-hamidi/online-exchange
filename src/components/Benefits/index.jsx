@@ -71,14 +71,20 @@ export default function Benefits() {
       <Grid item xs={10} margin={"0 auto"}>
         <Grid container>
           <Grid item xs={12} mb={3}>
-            <Typography>مزایای ارزینو</Typography>
+            <Typography variant="h4" color={"#33BBC5"} fontWeight={"800"}>
+              مزایای ارزینو
+            </Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid
               container
               sx={{
                 display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
+                gridTemplateColumns: {
+                  xs: "repeat(1, 1fr)",
+                  sm: "repeat(2, 1fr)",
+                  lg: "repeat(3, 1fr)",
+                },
                 gridTemplateRows: "repeat(2, 1fr)",
                 columnGap: 4,
                 rowGap: 2,

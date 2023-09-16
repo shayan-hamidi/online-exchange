@@ -24,7 +24,7 @@ export default function StyledAccordion({ accordionList }) {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography sx={{ color: "#33BBC5" }}>{data.details}</Typography>
+          <Typography sx={{ color: "#33BBC5" }} fontSize={'13px'}>{data.details}</Typography>
         </AccordionDetails>
       </Accordion>
     );

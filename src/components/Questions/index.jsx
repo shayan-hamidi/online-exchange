@@ -33,9 +33,11 @@ export default function Questions() {
   ];
   return (
     <Grid container mt={5}>
-      <Grid item xs={8} margin={"0 auto"}>
-        <Box sx={{ background: "white" }} padding={4}>
-          <Typography mb={2}>سوالات متداول</Typography>
+      <Grid item xs={12} md={8} margin={"0 auto"}>
+        <Box padding={4}>
+          <Typography mb={2} variant="h4" color={"#33BBC5"} fontWeight={"800"}>
+            سوالات متداول
+          </Typography>
           <StyledAccordion accordionList={questions} />
         </Box>
       </Grid>
