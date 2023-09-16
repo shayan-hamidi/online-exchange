@@ -4,7 +4,6 @@ import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
 import Testimonials from "../Testimonials";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   const profitsData = [
