@@ -3,11 +3,24 @@ import aboutUs1 from "../../assets/images/aboutUs1.svg";
 
 export default function About() {
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <Grid container display={"flex"}>
-          <Grid item>
-            <Typography>در آینده سرمایه‌گذاری کن</Typography>
+    <Grid container mt={5}>
+      <Grid item xs={11} md={8} margin={"0 auto"}>
+        <Grid
+          container
+          display={"flex"}
+          justifyContent={"space-between"}
+          columnGap={1}
+          rowGap={9}
+        >
+          <Grid item xs={12} md={6}>
+            <Typography
+              variant="h4"
+              color={"#33BBC5"}
+              fontWeight={"800"}
+              mb={2}
+            >
+              در آینده سرمایه‌گذاری کن
+            </Typography>
             <Typography>
               دورنمای ارزینو کمک به کاربران برای شروع آسان و در ادامه،
               حرفه‌ای‌تر شدن در معاملات ارز دیجیتال است و برای خلق تجربه‌
@@ -15,23 +28,38 @@ export default function About() {
             </Typography>
           </Grid>
           <Grid
+            xs={12}
+            md={5}
             item
             sx={{
-              marginTop: "-0.5rem",
+              display: "flex",
+              justifyContent: "center",
             }}
           >
-            <img width={500} src={aboutUs1} alt="aboutUsPNG" />
+            <img width={350} src={aboutUs1} alt="aboutUsPNG" />
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={8} margin={'0 auto'} mt={8} sx={{
-        background:'white',
-        borderRadius:'16px',
-        padding:"24px 24px 40px"
-      }}>
-        <Typography textAlign={"center"}>ما که هستیم و چه می کنیم؟</Typography>
+      <Grid
+        item
+        xs={11}
+        md={8}
+        margin={"0 auto"}
+        mt={12}
+        sx={{
+          background: "white",
+          borderRadius: "16px",
+          padding: "24px 24px 40px",
+        }}
+      >
+        <Typography textAlign={"center"} variant="h5" mb={3}>
+          ما که هستیم و چه می کنیم؟
+        </Typography>
         <Box>
-          <Typography textAlign={"center"}>
+          <Typography
+            textAlign={"center"}
+            fontSize={{ xs: "12px", md: "14px" }}
+          >
             ارزینو محصول شرکت «سنا ایمن مبادله» از برجسته‌ترین شرکت‌های حوزه‌
             فناوری اطلاعات و ارتباطات، مدیریت مالی و سرمایه‌گذاری متشکل از
             خبرگان حوزه فناوری و مدیریت مالی است. تیم ارزینو با توجه به نیاز
