@@ -27,35 +27,7 @@ export default function Home() {
     },
   ];
   return (
-    <Grid container>
-      {/* Nav */}
-      {/* <Grid
-        item
-        sx={{
-          height: "80px",
-          background: "#FAF0D7",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: 7,
-        }}
-        xs={12}
-      >
-        {[
-          { name: "خانه", route: "/" },
-          { name: "سوالات", route: "/questions" },
-          { name: "مزایا", route: "/benefits" },
-          { name: "درباره ما", route: "/aboutUs" },
-          { name: "تماس با ما", route: "contactUs" },
-        ].map((item) => {
-          return (
-            <Link className="nav-link" to={item.route}>
-              {item.name}
-            </Link>
-          );
-        })}
-      </Grid> */}
-      {/* Nav */}
+    <Grid>
       <Grid item xs={12} sx={{ margin: "0 auto" }}>
         <Grid container display={"flex"} justifyContent={"center"}>
           <Grid item>
@@ -69,7 +41,7 @@ export default function Home() {
             </Typography>
           </Grid>
           <Grid item>
-            <img width={350} src={homeChart} alt="homeChart" />
+            <img width={200} src={homeChart} alt="homeChart" />
           </Grid>
         </Grid>
         <Grid
@@ -135,19 +107,6 @@ export default function Home() {
         </Grid>
         <Testimonials />
       </Grid>
-      {/* <Grid
-        item
-        sx={{
-          height: "80px",
-          background: "#FAF0D7",
-          position: "fixed",
-          bottom: "0px",
-          left: "0px",
-          right: "0px",
-        }}
-      >
-        ssss
-      </Grid> */}
     </Grid>
   );
 }

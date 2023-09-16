@@ -5,7 +5,8 @@ import ContactPage from "../pages/Contact";
 import { Grid } from "@mui/material";
 import BenefitsPage from "../pages/Benefits";
 import QuestionsPage from "../pages/Questions";
-import NavBar from '../components/Nav'
+import NavBar from "../components/Nav";
+import Footer from "../components/Footer";
 export default function MainRoutes() {
   return (
     <Grid container>
@@ -17,6 +18,7 @@ export default function MainRoutes() {
         <Route path="/benefits" element={<BenefitsPage />} />
         <Route path="/questions" element={<QuestionsPage />} />
       </Routes>
+      <Footer />
     </Grid>
   );
 }
