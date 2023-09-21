@@ -7,6 +7,9 @@ import BenefitsPage from "../pages/Benefits";
 import QuestionsPage from "../pages/Questions";
 import NavBar from "../components/Nav";
 import Footer from "../components/Footer";
+import RulesPage from "../pages/Rules";
+import AcademyPage from "../pages/Academy";
+
 export default function MainRoutes() {
   return (
     <Grid container>
@@ -17,6 +20,9 @@ export default function MainRoutes() {
         <Route path="/contactUs" element={<ContactPage />} />
         <Route path="/benefits" element={<BenefitsPage />} />
         <Route path="/questions" element={<QuestionsPage />} />
+        <Route path="/rules" element={<RulesPage />} />
+        <Route path="/academy" element={<AcademyPage />} />
+        {/* <Route path="/magezine" element={<MagezinePage />} /> */}
       </Routes>
       <Footer />
     </Grid>

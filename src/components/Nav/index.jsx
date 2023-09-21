@@ -21,8 +21,10 @@ export default function Nav() {
         { name: "خانه", route: "/" },
         { name: "سوالات متداول", route: "/questions" },
         { name: "مزایا", route: "/benefits" },
+        // { name: "مجله", route: "/magezine" },
         { name: "درباره ما", route: "/aboutUs" },
-        { name: "تماس با ما", route: "contactUs" },
+        // { name: "تماس با ما", route: "/contactUs" },
+        { name: "آکادمی", route: "/academy" },
       ].map((item) => {
         return (
           <Link className="nav-link" to={item.route} key={item.route}>
