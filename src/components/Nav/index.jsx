@@ -187,7 +187,9 @@ export default function Nav() {
             </SwipeableDrawer>
           </Grid>
           <Grid item>
-            <Typography fontWeight={'bold'} color={'#33BBC5'} variant="h6">ARZINO</Typography>
+            <Typography fontWeight={"bold"} color={"#33BBC5"} variant="h6">
+              ARZINO
+            </Typography>
           </Grid>
           <Grid
             item

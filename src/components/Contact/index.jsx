@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Grid,
-  TextField,
-  TextareaAutosize,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import contactUs from "../../assets/images/contactUs.svg";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
@@ -20,17 +13,17 @@ export default function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_gdignkb",
+        "service_online-exchange",
         "template_sl0onaa",
         form.current,
         "JmK7QIb4jhfmMc7K-"
       )
       .then(
         (result) => {
-          // console.log(result);
+          console.log(result);
         },
         (error) => {
-          // console.log(error);
+          console.log(error);
         }
       );
     e.target.reset();
