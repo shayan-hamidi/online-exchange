@@ -4,6 +4,7 @@ import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
 import Testimonials from "../Testimonials";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const profitsData = [
@@ -27,21 +28,28 @@ export default function Home() {
     },
   ];
   return (
-    <Grid>
+    <Grid container mt={8}>
       <Grid item xs={12} sx={{ margin: "0 auto" }}>
-        <Grid container display={"flex"} justifyContent={"center"}>
-          <Grid item>
-            <Typography>
+        <Grid container display={"flex"} justifyContent={"center"} px={3}>
+          <Grid item xs={12} md={5} paddingRight={5}>
+            <Typography color={"#1D5D9B"} fontWeight={"bold"} variant="h4">
               با خیال راحت و مطمعن تر انتقال ریالی انجام دهید
             </Typography>
-            <Typography>
+            <Typography color={"#33BBC5"} variant="body2" mt={2}>
               در این صرافی میتوانید به سرعت نور خرید و فروش کنید و در کوتاه ترین
               زمان از سراسر دنیا ارز به ایران بفرستید و در ایران به ریال دریافت
               کنید و یا از ایران ریال به حساب افراد در کشور های دیگر ارسال کنید
             </Typography>
           </Grid>
-          <Grid item>
-            <img width={200} src={homeChart} alt="homeChart" />
+          <Grid
+            item
+            xs={12}
+            md={7}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <img width={300} src={homeChart} alt="homeChart" />
           </Grid>
         </Grid>
         <Grid
@@ -49,19 +57,44 @@ export default function Home() {
           display={"flex"}
           flexDirection={"column"}
           justifyContent={"center"}
+          my={5}
         >
-          <Grid item xs={12}>
-            <Typography textAlign={"center"}>
-              مزایای صرافی بیشتر بخوانید.
+          <Grid
+            item
+            xs={12}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            mb={3}
+          >
+            <Typography
+              textAlign={"center"}
+              fontWeight={"bold"}
+              color={"#33BBC5"}
+              variant="h5"
+              sx={{ margin: "0px 10px" }}
+            >
+              مزایای صرافی
             </Typography>
+            <Link
+              style={{
+                color: "#F4D160",
+              }}
+              to={"/benefits"}
+            >
+              بیشتر بخوانید...
+            </Link>
           </Grid>
           <Grid item xs={12} paddingX={5}>
-            <Grid container sx={{ width: "100%" }}>
+            <Grid container rowGap={2} sx={{ width: "100%" }}>
               {profitsData.map((item) => {
                 return (
                   <Grid
                     key={item.title}
-                    xs={3}
+                    xs={12}
+                    sm={5}
+                    md={3.9}
+                    lg={3}
                     item
                     sx={{
                       height: "200px",
@@ -88,7 +121,13 @@ export default function Home() {
                       }}
                     >
                       <Box>{item.icon}</Box>
-                      <Typography>{item.title}</Typography>
+                      <Typography
+                        fontWeight={"bold"}
+                        color={"#33BBC5"}
+                        fontSize={"18px"}
+                      >
+                        {item.title}
+                      </Typography>
                     </Box>
                     <Typography
                       sx={{
@@ -96,6 +135,8 @@ export default function Home() {
                       }}
                       textAlign={"center"}
                       paddingBottom={2}
+                      px={1}
+                      variant="caption"
                     >
                       {item.description}
                     </Typography>
