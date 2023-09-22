@@ -80,7 +80,7 @@ export default function Home() {
               style={{
                 color: "#F4D160",
               }}
-              to={"/online-exchange/benefits"}
+              to={"/benefits"}
             >
               بیشتر بخوانید...
             </Link>

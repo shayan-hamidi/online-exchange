@@ -15,13 +15,13 @@ export default function MainRoutes() {
     <Grid container>
       <NavBar />
       <Routes>
-        <Route path="/online-exchange" element={<HomePage />} />
-        <Route path="/online-exchange/aboutUs" element={<AboutPage />} />
-        <Route path="/online-exchange/contactUs" element={<ContactPage />} />
-        <Route path="/online-exchange/benefits" element={<BenefitsPage />} />
-        <Route path="/online-exchange/questions" element={<QuestionsPage />} />
-        <Route path="/online-exchange/rules" element={<RulesPage />} />
-        <Route path="/online-exchange/academy" element={<AcademyPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutUs" element={<AboutPage />} />
+        <Route path="/contactUs" element={<ContactPage />} />
+        <Route path="/benefits" element={<BenefitsPage />} />
+        <Route path="/questions" element={<QuestionsPage />} />
+        <Route path="/rules" element={<RulesPage />} />
+        <Route path="/academy" element={<AcademyPage />} />
         {/* <Route path="/magezine" element={<MagezinePage />} /> */}
       </Routes>
       <Footer />

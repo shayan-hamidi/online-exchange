@@ -43,7 +43,7 @@ export default function Footer() {
                 ارزینو
               </Typography>
               <ul>
-                <li onClick={() => navigate("/online-exchange/rules")} className="footer-link">
+                <li onClick={() => navigate("/rules")} className="footer-link">
                   قوانین
                 </li>
                 {/* <li>Arzino Mag</li> */}
@@ -74,13 +74,13 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/online-exchange/academy")}
+                  onClick={() => navigate("/academy")}
                   className="footer-link"
                 >
                   آکادمی
                 </li>
                 <li
-                  onClick={() => navigate("/online-exchange/online-exchange/benefits")}
+                  onClick={() => navigate("/benefits")}
                   className="footer-link"
                 >
                   مزایا
@@ -112,13 +112,13 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/online-exchange/aboutUs")}
+                  onClick={() => navigate("/aboutUs")}
                   className="footer-link"
                 >
                   درباره ما
                 </li>
                 <li
-                  onClick={() => navigate("/online-exchange/questions")}
+                  onClick={() => navigate("/questions")}
                   className="footer-link"
                 >
                   سوالات متداول
@@ -150,7 +150,7 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/online-exchange/contactUs")}
+                  onClick={() => navigate("/contactUs")}
                   className="footer-link"
                 >
                   ارتباط با ما
@@ -172,7 +172,7 @@ export default function Footer() {
                     <Grid item>
                       <a
                         className="footer-link"
-                        href="https://github.com/shayan-hamidi/online-exchange"
+                        href="https://github.com/shayan-hamidi"
                       >
                         <GitHubIcon />
                       </a>
