@@ -6,6 +6,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Contact() {
   const form = useRef();
@@ -20,10 +21,10 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result);
+          toast.success("پیام با موفقیت ارسال شد");
         },
         (error) => {
-          console.log(error);
+          toast.success("مشکلی رخ داده است");
         }
       );
     e.target.reset();
@@ -104,6 +105,10 @@ export default function Contact() {
                       background: "#1D5D9B",
                       borderRadius: "8px",
                       color: "white",
+                      ":hover": {
+                        background: "white",
+                        color: "#1D5D9B",
+                      },
                     }}
                   >
                     ارسال پیام
@@ -268,6 +273,7 @@ export default function Contact() {
           </Grid>
         </Grid>
       </Grid>
+      <ToastContainer />
     </Grid>
   );
 }
