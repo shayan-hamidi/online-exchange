@@ -27,23 +27,23 @@ export default function Nav() {
     { name: "خانه", route: "/", routeIcon: <HomeIcon /> },
     {
       name: "سوالات متداول",
-      route: "/questions",
+      route: "/online-exchange/questions",
       routeIcon: <QuestionAnswerIcon />,
     },
     {
       name: "مزایا",
-      route: "/benefits",
+      route: "/online-exchange/benefits",
       routeIcon: <ThumbUpAltOutlinedIcon />,
     },
     // { name: "مجله", route: "/magezine" , routeIcon: <AutoStoriesOutlinedIcon /> },
     {
       name: "درباره ما",
-      route: "/aboutUs",
+      route: "/online-exchange/aboutUs",
       routeIcon: <RoundaboutLeftOutlinedIcon />,
     },
     {
       name: "تماس با ما",
-      route: "/contactUs",
+      route: "/online-exchange/contactUs",
       routeIcon: <PermContactCalendarOutlinedIcon />,
     },
     { name: "آکادمی", route: "/academy", routeIcon: <SchoolOutlinedIcon /> },

@@ -43,7 +43,7 @@ export default function Footer() {
                 ارزینو
               </Typography>
               <ul>
-                <li onClick={() => navigate("/rules")} className="footer-link">
+                <li onClick={() => navigate("/online-exchange/rules")} className="footer-link">
                   قوانین
                 </li>
                 {/* <li>Arzino Mag</li> */}
@@ -74,13 +74,13 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/academy")}
+                  onClick={() => navigate("/online-exchange/academy")}
                   className="footer-link"
                 >
                   آکادمی
                 </li>
                 <li
-                  onClick={() => navigate("/benefits")}
+                  onClick={() => navigate("/online-exchange/online-exchange/benefits")}
                   className="footer-link"
                 >
                   مزایا
@@ -112,13 +112,13 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/aboutUs")}
+                  onClick={() => navigate("/online-exchange/aboutUs")}
                   className="footer-link"
                 >
                   درباره ما
                 </li>
                 <li
-                  onClick={() => navigate("/questions")}
+                  onClick={() => navigate("/online-exchange/questions")}
                   className="footer-link"
                 >
                   سوالات متداول
@@ -150,7 +150,7 @@ export default function Footer() {
               </Typography>
               <ul>
                 <li
-                  onClick={() => navigate("/contactUs")}
+                  onClick={() => navigate("/online-exchange/contactUs")}
                   className="footer-link"
                 >
                   ارتباط با ما
