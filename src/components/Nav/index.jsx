@@ -17,7 +17,6 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
-import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import RoundaboutLeftOutlinedIcon from "@mui/icons-material/RoundaboutLeftOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import PermContactCalendarOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
