@@ -15,6 +15,7 @@ export default function MainRoutes() {
     <Grid container>
       <NavBar />
       <Routes>
+        <Route path="*" element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutUs" element={<AboutPage />} />
         <Route path="/contactUs" element={<ContactPage />} />
