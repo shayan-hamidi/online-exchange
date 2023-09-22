@@ -5,3 +5,10 @@
 .nav-link :active {
   color: yellow;
 }
+.footer-link {
+  cursor: pointer;
+  width: max-content;
+}
+.footer-link:hover {
+  color: #1d5d9b;
+}

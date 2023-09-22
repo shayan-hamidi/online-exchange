@@ -42,7 +42,11 @@ export default function Nav() {
       route: "/aboutUs",
       routeIcon: <RoundaboutLeftOutlinedIcon />,
     },
-    { name: "تماس با ما", route: "/contactUs", routeIcon: <PermContactCalendarOutlinedIcon /> },
+    {
+      name: "تماس با ما",
+      route: "/contactUs",
+      routeIcon: <PermContactCalendarOutlinedIcon />,
+    },
     { name: "آکادمی", route: "/academy", routeIcon: <SchoolOutlinedIcon /> },
   ];
   const [state, setState] = useState({
@@ -75,18 +79,22 @@ export default function Nav() {
       <List>
         {initialRoutesList.map((item, index) => (
           <>
-            <ListItem sx={{
-              svg:{
-                color:"#1D5D9B"
-              }
-            }} key={item.route} disablePadding>
-              <ListItemButton>
+            <ListItem
+              sx={{
+                svg: {
+                  color: "#1D5D9B",
+                },
+              }}
+              key={item.route}
+              disablePadding
+            >
+              <ListItemButton display={"flex"} justifyContent="center">
                 <ListItemIcon>{item.routeIcon}</ListItemIcon>
                 <ListItemText
                   onClick={() => navigate(item.route)}
                   primary={item.name}
                   sx={{
-                    fontWeight:"bold"
+                    fontWeight: "bold",
                   }}
                 />
               </ListItemButton>
@@ -128,7 +136,7 @@ export default function Nav() {
           background: "#FAF0D7",
           justifyContent: "center",
           alignItems: "center",
-          gap: {xs:7,lg:9},
+          gap: { xs: 7, lg: 9 },
           margin: "0 auto",
           borderRadius: "0px 0px 60px 60px",
           display: { xs: "none", md: "flex" },
