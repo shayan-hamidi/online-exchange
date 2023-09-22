@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d96829bd.css",
-    "main.js": "/static/js/main.cfbf3d0a.js",
-    "static/media/home-chart.png": "/static/media/home-chart.ccde40e2f2f2c0095b6d.png",
-    "static/media/SGKara-Regular.ttf": "/static/media/SGKara-Regular.3e1bab766d2dab619ada.ttf",
-    "static/media/Ghasemi.jpg": "/static/media/Ghasemi.0f68cbc0e6b3c5cb0685.jpg",
-    "static/media/logo.png": "/static/media/logo.1043fcb6dacda4b11b14.png",
-    "static/media/contactUs.svg": "/static/media/contactUs.dedaa78c12b8d36fb17a5290ef66d449.svg",
-    "static/media/aboutUs1.svg": "/static/media/aboutUs1.fcd6acc1b003d0ec3161fa03b73985ff.svg",
-    "static/media/Aslani.jpg": "/static/media/Aslani.908f9c3a82fbed99ac3d.jpg",
-    "static/media/Alikhani.jpg": "/static/media/Alikhani.24ab8da4084e90425752.jpg",
-    "static/media/Khani.jpeg": "/static/media/Khani.8ccf4fd6765370a1e412.jpeg",
-    "static/media/Golshenas.jpeg": "/static/media/Golshenas.d9c39bae273501198eb4.jpeg",
-    "index.html": "/index.html",
-    "main.d96829bd.css.map": "/static/css/main.d96829bd.css.map",
-    "main.cfbf3d0a.js.map": "/static/js/main.cfbf3d0a.js.map"
+    "main.css": "/online-exchange/static/css/main.fe7ab0ff.css",
+    "main.js": "/online-exchange/static/js/main.df1cc488.js",
+    "static/media/home-chart.png": "/online-exchange/static/media/home-chart.ccde40e2f2f2c0095b6d.png",
+    "static/media/SGKara-Regular.ttf": "/online-exchange/static/media/SGKara-Regular.3e1bab766d2dab619ada.ttf",
+    "static/media/Ghasemi.jpg": "/online-exchange/static/media/Ghasemi.0f68cbc0e6b3c5cb0685.jpg",
+    "static/media/logo.png": "/online-exchange/static/media/logo.1043fcb6dacda4b11b14.png",
+    "static/media/contactUs.svg": "/online-exchange/static/media/contactUs.dedaa78c12b8d36fb17a5290ef66d449.svg",
+    "static/media/aboutUs1.svg": "/online-exchange/static/media/aboutUs1.fcd6acc1b003d0ec3161fa03b73985ff.svg",
+    "static/media/Aslani.jpg": "/online-exchange/static/media/Aslani.908f9c3a82fbed99ac3d.jpg",
+    "static/media/Alikhani.jpg": "/online-exchange/static/media/Alikhani.24ab8da4084e90425752.jpg",
+    "static/media/Khani.jpeg": "/online-exchange/static/media/Khani.8ccf4fd6765370a1e412.jpeg",
+    "static/media/Golshenas.jpeg": "/online-exchange/static/media/Golshenas.d9c39bae273501198eb4.jpeg",
+    "index.html": "/online-exchange/index.html",
+    "main.fe7ab0ff.css.map": "/online-exchange/static/css/main.fe7ab0ff.css.map",
+    "main.df1cc488.js.map": "/online-exchange/static/js/main.df1cc488.js.map"
   },
   "entrypoints": [
-    "static/css/main.d96829bd.css",
-    "static/js/main.cfbf3d0a.js"
+    "static/css/main.fe7ab0ff.css",
+    "static/js/main.df1cc488.js"
   ]
 }
