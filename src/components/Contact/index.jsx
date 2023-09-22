@@ -41,18 +41,20 @@ export default function Contact() {
       sx={{
         width: "85%",
         margin: "0 auto",
-        marginTop: "20px",
+        marginTop: "90px",
       }}
     >
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Grid container rowSpacing={4}>
           <Grid item xs={12}>
-            تماس با ما
+            <Typography variant="h4" color={"#33BBC5"} fontWeight={"800"}>
+              تماس با ما
+            </Typography>
           </Grid>
           <Grid item>
             <form ref={form} onSubmit={constsendEmail}>
-              <Grid container rowSpacing={3}>
-                <Grid item xs={12}>
+              <Grid container rowSpacing={1}>
+                <Grid item xs={12} md={10}>
                   <TextField
                     type="text"
                     name="name"
@@ -61,12 +63,15 @@ export default function Contact() {
                     inputProps={{
                       style: {
                         height: "10px",
-                        minWidth: "440px",
+                        minWidth: "100px",
                       },
+                    }}
+                    sx={{
+                      width: "100%",
                     }}
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} md={10}>
                   <TextField
                     type="email"
                     name="email"
@@ -75,12 +80,15 @@ export default function Contact() {
                     inputProps={{
                       style: {
                         height: "10px",
-                        minWidth: "440px",
+                        minWidth: "100px",
                       },
+                    }}
+                    sx={{
+                      width: "100%",
                     }}
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} md={10}>
                   <TextField
                     name="message"
                     placeholder={"پیام شما"}
@@ -88,8 +96,11 @@ export default function Contact() {
                     inputProps={{
                       style: {
                         height: "80px",
-                        minWidth: "440px",
+                        minWidth: "100px",
                       },
+                    }}
+                    sx={{
+                      width: "100%",
                     }}
                   />
                 </Grid>
@@ -109,10 +120,12 @@ export default function Contact() {
             </form>
           </Grid>
           <Grid item xs={12}>
-            <Grid container>
+            <Grid container rowGap={1} columnGap={1}>
               <Grid
                 item
-                xs={3}
+                xs={12}
+                sm={5}
+                md={3.9}
                 sx={{
                   background: "#CDEBFF",
                   minHeight: "100px",
@@ -130,11 +143,15 @@ export default function Contact() {
                 <Typography sx={{ fontWeight: "bold", color: "#1D5D9B" }}>
                   واتس اپ
                 </Typography>
-                <Typography sx={{ color: "#1D5D9B" }}>09301023512</Typography>
+                <Typography sx={{ color: "#1D5D9B" }} variant="caption">
+                  09301023512
+                </Typography>
               </Grid>
               <Grid
                 item
-                xs={3}
+                xs={12}
+                sm={5}
+                md={3.9}
                 sx={{
                   background: "#CDEBFF",
                   minHeight: "100px",
@@ -147,17 +164,20 @@ export default function Contact() {
                     color: "#1D5D9B",
                   },
                 }}
-                mx={3}
               >
                 <SendOutlinedIcon />
                 <Typography sx={{ fontWeight: "bold", color: "#1D5D9B" }}>
                   تلگرام
                 </Typography>
-                <Typography sx={{ color: "#1D5D9B" }}>09301023512</Typography>
+                <Typography sx={{ color: "#1D5D9B" }} variant="caption">
+                  09301023512
+                </Typography>
               </Grid>
               <Grid
                 item
-                xs={3}
+                xs={12}
+                sm={5}
+                md={3.9}
                 sx={{
                   background: "#CDEBFF",
                   minHeight: "100px",
@@ -175,7 +195,7 @@ export default function Contact() {
                 <Typography sx={{ fontWeight: "bold", color: "#1D5D9B" }}>
                   ایمیل
                 </Typography>
-                <Typography sx={{ color: "#1D5D9B" }}>
+                <Typography sx={{ color: "#1D5D9B" }} variant="caption">
                   shayan@gmail.com
                 </Typography>
               </Grid>
@@ -183,7 +203,7 @@ export default function Contact() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Grid
           container
           display={"flex"}
@@ -245,9 +265,10 @@ export default function Contact() {
             <Button
               sx={{
                 background: "#1D5D9B",
-                color: "white",
+                color: "white !important",
                 borderRadius: "8px",
               }}
+              disabled
             >
               دانلود اپلیکیشن
             </Button>
