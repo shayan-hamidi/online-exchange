@@ -6,11 +6,12 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "IRANSans" !important;
 }
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "IRANSans" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f0f9ff;
